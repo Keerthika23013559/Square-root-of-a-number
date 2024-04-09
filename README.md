@@ -14,21 +14,26 @@ To write a program to find the square root of a number.
 4. Calculate  number = 0.5 * (number + a / number) for 100 iterations.
 5. Return number
 
-
+## Program:
 ```
-/*
 Program to find the square root for the given number(newton's method) using function.
 Developed by: KEERTHIKA M P
-RegisterNumber: 212223240071 
-*/
+RegisterNumber: 212223240071
+def newton_method(number,number_iters=100):
+    a=float(number)
+    for i in range(number_iters):
+        number=0.5*(number+a/number)
+    return number
+a=int(input())
+print("Square root of the number:",newton_method(a))
+
 ```
-## Program:
-![Screenshot 2024-03-23 085426](https://github.com/Keerthika23013559/Square-root-of-a-number/assets/162658262/97f8f0cb-ea28-451a-83e4-a1577c3bc2fa)
 
 
 ## Output:
 
-![Screenshot 2024-03-23 085438](https://github.com/Keerthika23013559/Square-root-of-a-number/assets/162658262/f34fafd9-ef11-46f6-9ef8-fa67caa0a9ee)
+
+![Screenshot 2024-04-09 140228](https://github.com/Keerthika23013559/Square-root-of-a-number/assets/162658262/5022ee90-6cd6-46ed-abbe-cabfdafe7a7f)
 
 
 ## Result:
